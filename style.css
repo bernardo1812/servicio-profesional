@@ -1,0 +1,48 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+  margin-top: 0%;
+}
+
+header{ 
+    background-color: #8CDDB6;
+    padding-bottom: 20px;
+}
+h1{
+    text-align: center;
+    padding-top: 12px;
+}
+nav ul{
+    
+
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    width:95%;
+}
+#subtitulo{
+    background-color: black;
+    color: azure;
+    margin: 0%;
+    border:0px
+}
+header nav ul button{
+    border: 100%
+}
+h2{
+    margin:2%
+}
+
+p{
+    margin-top: 1%;
+    padding: 2%;
+}   
+div img {
+    margin-left: 100px;
+    width: 500px;
+justify-content: center;
+align-items: center;
+}
