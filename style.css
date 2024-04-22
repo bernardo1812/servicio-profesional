@@ -4,8 +4,6 @@
     box-sizing: border-box;
 }
 
-
-
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0%;
@@ -28,19 +26,19 @@ ul{
     width:95%;
 }
 #subtitulo{
-    margin: 0%;
-    border:0px
+    margin-top: 2%;
 }
 header nav ul button{
     border: 100%
 }
 h2{
-    margin:2%
+    margin:2%;
 }
 
 p{
     margin-top: 1%;
-    padding: 2%;
+    padding: 4%;
+
 }
 div img {
     width: 80%;
@@ -49,12 +47,13 @@ div img {
 }
 
 #icon{
-    width: 50px;
+    width: 25%;
+
 }
 
 #iconytxt{
     display: flex;
-    align-items: center;
+    align-items:center;
     justify-content: stretch;
     padding-left: 20%;
 }
@@ -67,4 +66,7 @@ div img {
 
 ul{
     margin: 1%;
+}
+h4{
+    margin:2%
 }
