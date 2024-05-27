@@ -3,23 +3,25 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+header{
+    background-color: #8CDDB6;
+    padding-bottom: 1%;
+}
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0%;
   margin-top: 0%;
 }
-
-header{
+footer{
+    display: flex;
+    flex-direction: row;
     background-color: #8CDDB6;
-    padding-bottom: 20px;
-    width: 100%;
+    padding-bottom: 1%;
 }
 h1{
     text-align: center;
     padding-top: 12px;
 }
-
 ul{
     display: flex;
     justify-content: space-around;
@@ -27,7 +29,7 @@ ul{
     width:95%;
 }
 #subtitulo{
-    margin-top: 2%;
+    margin-top: 1%;
     padding-bottom: 0%;
 }
 header nav ul button{
@@ -37,48 +39,31 @@ h2{
     margin:1%;
     margin-bottom: 0%;
 }
-
 p{
-    padding: 1.6%;
-
+    padding: 1%;
 }
 div img {
     width: 70%;
  justify-content: center;
  padding-left: 30%;
 }
-
 #icon{
-    width: 35%;
-
-
+    width: 40%;
 }
-
 #iconytxt{
-    display: flex;
     align-items:center;
-    justify-content: stretch;
-    padding-left: 20%;
+    display: flex;
 }
-
 #button{
     border-radius: 12%;
     size: 150%;
 }
-
-ul{
-    margin: 1%;
-}
-h4{
-    margin-bottom:2%;
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-top:1%
-}
-
 #img{
-
     width: 75%;
  justify-content: center;
  padding-left: 20%;
+}
+#divfoot{
+   display: flex;
+   flex-direction: row;
 }
