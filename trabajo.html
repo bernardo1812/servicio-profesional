@@ -9,17 +9,21 @@
     <title>Servicio profesional</title>
 </head>
 <body>
-    <header id="menu-container">
-        <h1>Servicio de Psicología Profesional</h1>
-        
-        <nav>
-          <ul>
-            <button id="button"><a href="index.html">Principal</a></button>
-           
-            <button id="button"><a href="queOfrecemos.html">¿Qué ofrezco?</a></button>
-          </ul>
-       </nav>
-   </header>
+  <header id="menu-container">
+    <h1>Servicio de Psicología Profesional</h1>
+    <nav>
+     <ul class="sidebar">
+       <li id="button" onclick=hideSideBar()><a ><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li id="button" ><a href="index.html">Principal</a></li>
+        <li id="button"><a href="queOfrecemos.html">¿Qué ofrezco?</a></li>
+     </ul>
+      <ul >
+        <li id="button" class="hideOnMobile"><a href="index.html">Principal</a></li>
+        <li id="button"class="hideOnMobile"><a href="queOfrecemos.html">¿Qué ofrezco?</a></li>
+        <li onclick=showSideBar()><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+      </ul>
+    </nav>
+</header>
     <section>
         <h1>¿Quién soy?</h1>
     
@@ -48,5 +52,16 @@
   </div>  
 </section>
  </footer>
+ <script>
+  function showSideBar(){
+    const sidebar= document.querySelector(".sidebar")
+    sidebar.style.display ='flex'
+  }
+  function hideSideBar(){
+    const sidebar= document.querySelector(".sidebar")
+    sidebar.style.display='none'
+  }
+
+ </script>
 </body>
 </html>    

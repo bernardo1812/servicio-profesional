@@ -3,14 +3,59 @@
     padding: 0;
     box-sizing: border-box;
 }
-header{
-    background-color: #8CDDB6;
-    padding-bottom: 1%;
-}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0%;
   margin-top: 0%;
+  min-height: 100vh;
+}
+header{
+    background-color: #8CDDB6;
+    margin-bottom: 1%;
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height: 50px;
+}
+nav a {
+    height:100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+nav a:hover{
+    background-color: white;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgb(192, 192, 192);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
 }
 footer{
     display: flex;
@@ -19,26 +64,10 @@ footer{
     padding-bottom: 1%;
 }
 h1{
+    display: block;
     text-align: center;
-    padding-top: 12px;
 }
-ul{
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    width:95%;
-}
-#subtitulo{
-    margin-top: 1%;
-    padding-bottom: 0%;
-}
-header nav ul button{
-    border: 100%
-}
-h2{
-    margin:1%;
-    margin-bottom: 0%;
-}
+
 p{
     padding: 1%;
 }
@@ -54,10 +83,6 @@ div img {
     align-items:center;
     display: flex;
 }
-#button{
-    border-radius: 12%;
-    size: 150%;
-}
 #img{
     width: 75%;
  justify-content: center;
@@ -66,4 +91,9 @@ div img {
 #divfoot{
    display: flex;
    flex-direction: row;
+}
+@media (max-width:800px) {
+    .hideOnMobile{
+        display: none;
+    }
 }
